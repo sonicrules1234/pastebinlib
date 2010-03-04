@@ -39,7 +39,7 @@ def paste(paste_code, paste_name=None, paste_subdomain=None, paste_private=None,
     url.close()
     return url_read
 def get_paste_by_id(urlid, subdomain=None) :
-    """Gets the contents of a paste with the given ID and option subdomain"""
+    """Gets the contents of a paste with the given ID and optional subdomain"""
     if subdomain == None :
         sub = ""
     else : sub = subdomain + "."
