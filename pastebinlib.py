@@ -33,7 +33,7 @@ def paste(paste_code, paste_name=None, paste_subdomain=None, paste_private=None,
     possibles = {"paste_name":paste_name, "paste_subdomain":paste_subdomain, "paste_private":paste_private, "paste_expire_date":paste_expire_date, "paste_format":paste_format}
     for param in possibles.keys() :
         if possibles[param] != None :
-            data[param] = possibles["param"]
+            data[param] = possibles[param]
     url = urllib.urlopen("http://pastebin.com/api_public.php", urllib.urlencode(data))
     url_read = url.read()
     url.close()
