@@ -31,7 +31,7 @@ class pastebin :
     """To use this class, you need to make an instance of it first.
 An example would be
 import pastebinlib
-instance = pastebinlib.pastebin(apikey)
+instance = pastebinlib3.pastebin(apikey)
 
 Where apikey is the developer API key you get when registering on pastebin.com"""
     def __init__(self, apikey) :
